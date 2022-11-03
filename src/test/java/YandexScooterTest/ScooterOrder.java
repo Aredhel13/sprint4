@@ -8,9 +8,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -18,7 +16,6 @@ import java.util.concurrent.TimeUnit;
 @RunWith(Parameterized.class)
 public class ScooterOrder {
         WebDriver driver;
-
         private final String userName;
         private final String userSurname;
         private final String userAddress;
@@ -63,14 +60,13 @@ public class ScooterOrder {
             mainPage.clickOnElement(orderButton);
 
             ForWhomScooterPage forWhomScooterPage = new ForWhomScooterPage(driver);
-            forWhomScooterPage.inputValuesInFormUserData(userName,userSurname,userAddress,userPhoneNumber);
+            forWhomScooterPage.inputValuesInFormUserDataAndClickNext(userName,userSurname,userAddress,userPhoneNumber);
 
             RentPage rentPage = new RentPage(driver);
             rentPage.inputValuesInRentFormAndCreateOrder(orderDate, comment);
             Assert.assertEquals("Заказ оформлен", rentPage.getTextFromOrderProcessedWindow());
 
         }
-
 
         @After
         public void teardown(){

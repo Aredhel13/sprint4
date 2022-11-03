@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="29f2e8ef-ebba-44f6-8fa3-5c2af85474ab" name="Changes" comment="project sprint4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YandexScooterTest/PageOpject/ForWhomScooterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/YandexScooterTest/PageOpject/ForWhomScooterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YandexScooterTest/ScooterOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/YandexScooterTest/ScooterOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667484558396</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="project sprint4">
+      <created>1667487523088</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667487523088</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

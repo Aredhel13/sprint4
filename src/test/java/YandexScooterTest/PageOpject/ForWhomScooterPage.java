@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class ForWhomScooterPage {
-    private WebDriver driver;
+    WebDriver driver;
     //локатор для поля "Имя"
     private final By name = By.xpath(".//input[@placeholder = '* Имя']");
     //локатор для поля "Фамилия"
@@ -14,7 +14,7 @@ public class ForWhomScooterPage {
     //локатор для поля "Станция метро"
     private final By metroStation = By.xpath(".//input[@placeholder = '* Станция метро']");
     //локатор конкретной станции метро
-    private By metroStationSocolniki = By.xpath(".//div[@class = 'select-search__select']/ul/li/button[@value = '1']"); ///div[@class = 'Order_Text_2broi' and text() = 'Сокольники']
+    private final By metroStationSocolniki = By.xpath(".//div[@class = 'select-search__select']/ul/li/button[@value = '1']"); ///div[@class = 'Order_Text_2broi' and text() = 'Сокольники']
     //локатор для поля "Телефон"
     private final By phone = By.xpath(".//input[@placeholder = '* Телефон: на него позвонит курьер']");
     //локатор кнопки "Далее"
@@ -31,7 +31,7 @@ public class ForWhomScooterPage {
         driver.findElement(button).click();
     }
 
-    public void inputValuesInFormUserData(String userName, String userSurname, String userAddress, String userPhone){
+    public void inputValuesInFormUserDataAndClickNext(String userName, String userSurname, String userAddress, String userPhone){
         driver.findElement(name).sendKeys(userName);
         driver.findElement(surname).sendKeys(userSurname);
         driver.findElement(address).sendKeys(userAddress);
